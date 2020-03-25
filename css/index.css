@@ -1,0 +1,119 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;900&display=swap');
+
+:root {
+    --main-font: 'Spartan';
+
+    --ghost-white: #F9F8FB;
+    --medium-spring-green: #01FFA9;
+    --charleston-green: #2D2D2D;
+    --eerie-black: #181818;
+    --licorice: #141414;
+}
+
+* {
+    color: var(--ghost-white);
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--charleston-green);
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    background-color: var(--eerie-black);
+    width: 100vw;
+    z-index: 3;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    display: block;
+    width: 8em;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.navbar-item a {
+    display: block;
+
+    /* Text */
+    font-size: rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.1em 0;
+
+    /* Prevents item from getting marked */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    background-color: var(--licorice);
+}
+
+.name {
+    color: var(--medium-spring-green)
+}
+
+#titles-content p {
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+#titles-content {
+    display: inline-block;
+    position: absolute;
+    top: 35vh;
+    right: 20vw;
+    text-align: center;
+}
+
+#bgrbox {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: -3;
+    width: 100%;
+    height: auto;
+}
+
+#bgr {
+    filter: blur(0.25rem);
+    transform: rotate(13deg) scale(2);
+    margin-top: 10%;
+    margin-left: 25%;
+} 
+
+#current-page {
+    color: var(--medium-spring-green);
+}
+
+#wrapper {
+    transform: .4s;
+}
+
+@media only screen and (max-width: 800px) {
+    #titles-content p {
+        font-size: 4vw;
+    }
+}
