@@ -1,0 +1,26 @@
+/* home.css */
+
+#titles-content p {
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+#titles-content {
+    display: inline-block;
+    position: absolute;
+    top: 35vh;
+    right: 20vw;
+    text-align: center;
+}
+
+.name {
+    color: var(--medium-spring-green)
+}
+
+@media only screen and (max-width: 800px) {
+    #titles-content p {
+        font-size: 4vw;
+    }
+}

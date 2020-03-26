@@ -10,6 +10,8 @@
     --charleston-green: #2D2D2D;
     --eerie-black: #181818;
     --licorice: #141414;
+
+    --fade-in-time: 2s;
 }
 
 * {
@@ -68,25 +70,6 @@ body {
     background-color: var(--licorice);
 }
 
-.name {
-    color: var(--medium-spring-green)
-}
-
-#titles-content p {
-    margin: 0;
-    text-align: center;
-    font-weight: 900;
-    font-size: 3vw;
-}
-
-#titles-content {
-    display: inline-block;
-    position: absolute;
-    top: 35vh;
-    right: 20vw;
-    text-align: center;
-}
-
 #bgrbox {
     margin: 0;
     position: fixed;
@@ -104,16 +87,17 @@ body {
     margin-left: 25%;
 } 
 
-#current-page {
+.navbar-item a.active {
     color: var(--medium-spring-green);
 }
 
+
 #wrapper {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    -webkit-animation: fadein var(--fade-in-time); /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein var(--fade-in-time); /* Firefox < 16 */
+    -ms-animation: fadein var(--fade-in-time); /* Internet Explorer */
+    -o-animation: fadein var(--fade-in-time); /* Opera < 12.1 */
+    animation: fadein var(--fade-in-time);
 }
 
 
@@ -144,10 +128,4 @@ to   { opacity: 1; }
 @-o-keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
-}
-
-@media only screen and (max-width: 800px) {
-    #titles-content p {
-        font-size: 4vw;
-    }
 }

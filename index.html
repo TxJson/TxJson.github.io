@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 
 
     <meta charset="UTF-8">
@@ -14,26 +16,17 @@
     </div>
     <nav id="navbar">
         <ul>
-            <li class="navbar-item" id="home-btn"><a id="current-page">home</a></li>
-            <li class="navbar-item" id="about-btn"><a>about</a></li>
-            <li class="navbar-item" id="work-btn"><a>work</a></li>
-            <!--<li class="navbar-item" id="blog-btn"><a>blog</a></li>-->
-            <li class="navbar-item" id="contact-btn"><a>contact</a></li>
+            <li class="navbar-item" id="home-btn"><a id="home">home</a></li>
+            <li class="navbar-item" id="about-btn"><a id="about">about</a></li>
+            <li class="navbar-item" id="work-btn"><a id="work">work</a></li>
+            <!--<li class="navbar-item" id="blog-btn"><a id="blog">blog</a></li>-->
+            <li class="navbar-item" id="contact-btn"><a id="contact">contact</a></li>
         </ul>
     </nav>
     <section id="wrapper">
-        <div id="titles-content">
-            <p class="title"> 
-                Hello, I am 
-                <span class="name">
-                    Pontuz Klasson
-                </span>
-            </p>
-            <p class="title">I'm a Software Engineer.</p>
-        </div>
     </section>
     <section id="templates">
-       <template id="home">
+       <template id="home-template">
         <div id="titles-content">
             <p class="title"> 
                 Hello, I am 
@@ -44,9 +37,18 @@
             <p class="title">I'm a Software Engineer.</p>
         </div>
        </template> 
-       <template id="about">
+       <template id="contact-template">
+           <div id="contact-container">
+               <form>
+                   <input type="text" id="person-name" name="person-name" placeholder="Your name">
+                   <input type="text" id="email" name="person-name" placeholder="Your email">
+                   <input type="text" id="subject" name="person-name" placeholder="Subject">
+                   <textarea id="subject-text" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                   <input type="submit" value="Submit">
+               </form>
+           </div>
        </template>
     </section>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
