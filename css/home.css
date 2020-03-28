@@ -1,18 +1,17 @@
 /* home.css */
 
-#titles-content p {
+#titles-container p {
     margin: 0;
     text-align: center;
     font-weight: 900;
     font-size: 3vw;
 }
 
-#titles-content {
+#titles-container {
     display: inline-block;
-    position: absolute;
+    position: relative;
     top: 35vh;
-    right: 20vw;
-    text-align: center;
+    margin-left: 20vw;
 }
 
 .name {
@@ -20,7 +19,10 @@
 }
 
 @media only screen and (max-width: 800px) {
-    #titles-content p {
+    #titles-container p {
         font-size: 4vw;
+    }
+    #titles-container {
+        margin: 0;
     }
 }

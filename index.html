@@ -27,7 +27,7 @@
     </section>
     <section id="templates">
        <template id="home-template">
-        <div id="titles-content">
+        <div id="titles-container">
             <p class="title"> 
                 Hello, I am 
                 <span class="name">
@@ -39,12 +39,13 @@
        </template> 
        <template id="contact-template">
            <div id="contact-container">
-               <form>
-                   <input type="text" id="person-name" name="person-name" placeholder="Your name">
-                   <input type="text" id="email" name="person-name" placeholder="Your email">
-                   <input type="text" id="subject" name="person-name" placeholder="Subject">
-                   <textarea id="subject-text" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                   <input type="submit" value="Submit">
+               <h1>Contact</h1>
+               <form name="contact" method="POST" data-netlify="true">
+                   <input type="text" id="form-item" name="person-name" placeholder="Name">
+                   <input type="text" id="form-item" name="email" placeholder="Email">
+                   <input type="text" id="form-item" name="subject" placeholder="Subject">
+                   <textarea type="textbox" id="form-item" name="subject" placeholder="Write something.."></textarea>
+                   <input type="submit" id="form-item" value="Submit">
                </form>
            </div>
        </template>

@@ -5,7 +5,8 @@
 :root {
     --main-font: 'Spartan';
 
-    --ghost-white: #F9F8FB;
+    --main-bg-colour: #F9F8FB;
+
     --medium-spring-green: #01FFA9;
     --charleston-green: #2D2D2D;
     --eerie-black: #181818;
@@ -15,7 +16,7 @@
 }
 
 * {
-    color: var(--ghost-white);
+    color: var(--main-bg-colour);
     font-family: var(--main-font);
 }
 
@@ -93,6 +94,10 @@ body {
 
 
 #wrapper {
+    display: inline-block;
+    width: 100vw;;
+    height: 100vh;
+    text-align: center;
     -webkit-animation: fadein var(--fade-in-time); /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein var(--fade-in-time); /* Firefox < 16 */
     -ms-animation: fadein var(--fade-in-time); /* Internet Explorer */
