@@ -28,7 +28,7 @@ body {
 
 #navbar {
     position: fixed;
-    display: block;
+    display: flex;
     bottom: 0;
     background-color: var(--eerie-black);
     width: 100vw;
@@ -77,8 +77,6 @@ body {
     width: 100%;
     height: auto;
     z-index: -3;
-    width: 100%;
-    height: auto;
 }
 
 #bgr {
@@ -95,14 +93,16 @@ body {
 
 #wrapper {
     display: inline-block;
-    width: 100vw;;
-    height: 100vh;
+    width: 100vw;
+    height: 85vh;
     text-align: center;
     -webkit-animation: fadein var(--fade-in-time); /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein var(--fade-in-time); /* Firefox < 16 */
     -ms-animation: fadein var(--fade-in-time); /* Internet Explorer */
     -o-animation: fadein var(--fade-in-time); /* Opera < 12.1 */
     animation: fadein var(--fade-in-time);
+    overflow: auto;
+    
 }
 
 
@@ -133,4 +133,8 @@ to   { opacity: 1; }
 @-o-keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 800px) {
+
 }
